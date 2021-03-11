@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerview.MainController">
+   <children>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="209.0" text="Name" />
+      <Label alignment="CENTER" layoutY="50.0" prefHeight="50.0" prefWidth="209.0" text="Adress" />
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="100.0" prefHeight="50.0" prefWidth="210.0" text="Phone" />
+      <Button layoutX="395.0" layoutY="162.0" mnemonicParsing="false" onAction="#next" prefHeight="54.0" prefWidth="194.0" text="&gt;&gt;" />
+      <Button layoutX="7.0" layoutY="162.0" mnemonicParsing="false" onAction="#previous" prefHeight="54.0" prefWidth="194.0" text="&lt;&lt;" />
+      <Button layoutX="7.0" layoutY="246.0" mnemonicParsing="false" onAction="#add" prefHeight="54.0" prefWidth="194.0" text="Add" />
+      <Button layoutX="201.0" layoutY="246.0" mnemonicParsing="false" onAction="#delete" prefHeight="54.0" prefWidth="194.0" text="Delete" />
+      <Button layoutX="395.0" layoutY="246.0" mnemonicParsing="false" onAction="#save" prefHeight="54.0" prefWidth="194.0" text="Save Changes" />
+      <Button layoutX="7.0" layoutY="331.0" mnemonicParsing="false" onAction="#loadCsv" prefHeight="54.0" prefWidth="194.0" text="Load From CSV" />
+      <Button layoutX="395.0" layoutY="331.0" mnemonicParsing="false" onAction="#saveCsv" prefHeight="54.0" prefWidth="194.0" text="Save to CSV" />
+      <TextField fx:id="name" layoutX="210.0" prefHeight="50.0" prefWidth="379.0" />
+      <TextField fx:id="adress" layoutX="210.0" layoutY="50.0" prefHeight="50.0" prefWidth="379.0" />
+      <TextField fx:id="phone" layoutX="210.0" layoutY="100.0" prefHeight="50.0" prefWidth="379.0" />
+      <Label fx:id="pageNr" alignment="CENTER" layoutX="198.0" layoutY="149.0" prefHeight="61.0" prefWidth="194.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
